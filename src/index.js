@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-const user = {
-    firstName: "Lan",
-    lastName: "Pham"
-};
-const element = <div>Hello {user.firstName} {user.lastName} </div>;
+import App from './App';
 
-ReactDom.render(element, document.getElementById('root'));
+ReactDom.render(<App/>, document.getElementById('root'));
