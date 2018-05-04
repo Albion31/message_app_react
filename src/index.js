@@ -1,8 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import ReactDom from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const user = {
+    firstName: "Lan",
+    lastName: "Pham"
+};
+const element = <div>Hello {user.firstName} {user.lastName} </div>;
+
+ReactDom.render(element, document.getElementById('root'));
