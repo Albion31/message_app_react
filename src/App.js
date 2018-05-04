@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 
+import './App.css';
+
 class App extends Component {
 
     render(){
+        const headerStyle = {
+            color: '#3CB371',
+            textDecoration: 'underline'
+        }
         return (
           <div>
-              Hello World Again!
+              <h2 style ={headerStyle}>Hello World Again!</h2>
           </div>  
         )
     }
